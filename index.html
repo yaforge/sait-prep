@@ -7,13 +7,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
     <style>
         
+        .unbounded {
+            font-family: "Unbounded", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 900;
+            font-style: normal;
+        }
+
         .inter {
             font-family: "Inter", sans-serif;
             font-optical-sizing: auto;
             font-weight: 400;
             font-style: normal;
+            color: #fff;
         }
 
         body {
@@ -21,7 +30,18 @@
             margin: 0;
             background-color: #282A2D;
         }
+        .containter {
+            width: 100vw;
+            height: 100vh;
+        }
         header {
+            display: flex;
+            padding: 10px;
+            color: #FFFFFF;
+            background-color: #1D1F21;
+        }
+        footer {
+            margin-top: calc(100vh - 128px);
             display: flex;
             padding: 10px;
             color: #FFFFFF;
@@ -36,26 +56,41 @@
             background-color: #1D1F21;
             border: solid #282A2D 4px;
         }
+        h1 {
+            color: #fff;
+            font-family: "Unbounded", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 900;
+            font-style: normal;
+            font-size: 48;
+        }
     </style>
 </head>
 <body>
-    <header class="inter">
-        <img src="logo-gt.svg" />
-        <div class="he">
-            Видео
-        </div>
-        <div class="he">
-            Галерея
-        </div>
-        <div class="he">
-            Описание
-        </div>
-        <div class="he">
-            О сайте
-        </div>
-        <div class="he">
-            <input type="text" class="ti" />
-        </div>
-    </header>
+    <div class="containter">
+        <header class="inter">
+            <img src="logo-gt.svg" />
+            <div class="he">
+                Видео
+            </div>
+            <div class="he">
+                Галерея
+            </div>
+            <div class="he">
+                Описание
+            </div>
+            <div class="he">
+                О сайте
+            </div>
+            <div class="he">
+                <input type="text" class="ti" />
+            </div>
+        </header>
+        <footer class="inter">
+            <div class="he">
+                &copy; Sberbank ramis
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
